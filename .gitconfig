@@ -1,0 +1,26 @@
+[user]
+	name = XXXX
+	email = XXXX@googlemail.com
+[core]
+	autocrlf = true
+	editor = C:/Program\\ Files/Notepad++/notepad++.exe -multiInst -notabbar -nosession -noPlugin
+[url "https://"]
+	insteadOf = git://
+[merge]
+	tool = diffmerge
+[mergetool "diffmerge"]
+	trustExitCode = true
+	cmd = C:/Program\\ Files/SourceGear/Common/DiffMerge/sgdm.exe -merge -result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+[mergetool]
+	keepBackup = false
+[diff]
+	tool = diffmerge
+[difftool "diffmerge"]
+	cmd = sgdm $LOCAL $REMOTE
+[alias]
+	gl = log --oneline --graph --branches --all 	# graphic log
+	gls = log --oneline --graph 					# graphic log simple
+[remote "origin"]
+	prune = true
+[credential]
+	helper = wincred

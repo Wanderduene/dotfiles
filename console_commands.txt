@@ -1,0 +1,2 @@
+Reset git + npm project and delete all node_modules (also in subfolders):
+git checkout . && git clean -fd && find . -name "node_modules" -type d -exec rm -rf '{}' +
