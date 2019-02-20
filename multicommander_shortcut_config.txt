@@ -1,0 +1,23 @@
+## CMD ## 
+Pfad:
+%WINDIR%\System32\cmd.exe
+Param:
+/d /k cd /d "${sourcepath}"
+
+## ConEmu ##
+Pfad:
+C:\Program Files\ConEmu\ConEmu64.exe
+Param:
+-dir "${sourcepath}"
+
+## VSCode ##
+Pfad:
+C:\Users\rwic\AppData\Local\Programs\Microsoft VS Code\Code.exe
+Param:
+"${sourcepath}"
+
+## PowerShell ##
+Pfad:
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Param:
+-noexit -command "cd ${sourcepath} "
