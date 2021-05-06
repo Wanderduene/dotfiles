@@ -20,6 +20,7 @@
 [alias]
 	gl = log --oneline --graph --branches --all 	# graphic log
 	gls = log --oneline --graph 					# graphic log simple
+	scf = show --pretty="" --name-only HEAD			# show changed files (Dateien anzeigen die im aktuellen Commit (HEAD) geändert wurden)
 [remote "origin"]
 	prune = true
 [credential]
