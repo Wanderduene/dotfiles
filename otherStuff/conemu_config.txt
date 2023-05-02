@@ -1,0 +1,4 @@
+"ConEmu here" Explorer integration for Git Bash:
+
+Menu item: ConEmu Here [Git Bash]
+Command: /single /cmd {Git Bash}
